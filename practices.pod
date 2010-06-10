@@ -14,7 +14,7 @@ always use whitespace on both side of an infix operator.
 
 =head2 Exceptions
 
-If you write lists, C<1, 2, 3> is much more readable than C<1 , 2, 3>. So in
+If you write lists, C<1, 2, 3> is much more readable than C<1 , 2 , 3>. So in
 the case of the comma operator, stick to conventional spacing style.
 
 =head2 Champions
