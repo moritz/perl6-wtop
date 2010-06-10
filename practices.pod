@@ -1,0 +1,22 @@
+=head1 Use whitespace around infix operators
+
+=head2 Example
+
+Write C<1 + 1> instead of C<1+1>.
+
+=head2 Rationale
+
+Perl 6 has a very rich grammar, and in some cases whitespace disambiguates
+certain constructs. While C<1+1> does what you mean, C<< 1<2 >> does not.
+Without a blank between the 1 and the <, the latter is parsed as a
+postcircumfiix, just like in C<< %hash<key> >>. It is therefore recommended to
+always use whitespace on both side of an infix operator.
+
+=head2 Exceptions
+
+If you write lists, C<1, 2, 3> is much more readable than C<1 , 2, 3>. So in
+the case of the comma operator, stick to conventional spacing style.
+
+=head2 Champions
+
+moritz
